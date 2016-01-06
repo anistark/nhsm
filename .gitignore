@@ -7,7 +7,6 @@ lib-cov
 results
 npm-debug.log
 
-
 # Logs
 logs
 *.log
