@@ -3,15 +3,15 @@ Node Hapi Swig Mongo
 
 Stuffs Used :
 
-[Node][nodeUrl]{:target="_blank"}
+#### [Node][nodeUrl]
 
-#### [Hapi](http://hapijs.com/ :target="_blank")
+#### [Hapi](http://hapijs.com/)
 
-#### [Swig](http://paularmstrong.github.io/swig/){:target="_blank"}
+#### [Swig](http://paularmstrong.github.io/swig/)
 
-#### [MongoDb](https://www.mongodb.org/){:target="_blank"}
+#### [MongoDb](https://www.mongodb.org/)
 
-#### [Joi](https://github.com/hapijs/joi){:target="_blank"}
+#### [Joi](https://github.com/hapijs/joi)
 
 
 Setup
