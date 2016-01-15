@@ -3,7 +3,7 @@ Node Hapi Swig Mongo
 
 Stuffs Used :
 
-#### [Node][nodeUrl]{:target="_blank"}
+[Node][nodeUrl]{:target="_blank"}
 
 #### [Hapi](http://hapijs.com/ :target="_blank")
 
