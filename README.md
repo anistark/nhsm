@@ -19,7 +19,11 @@ Setup
 $ git clone --depth=1 https://github.com/anistark/nhsm.git
 $ cd nhsm
 $ npm install
+$ cp config_example.js config.js
 ```
+
+Replace the config values accordingly.
+
 
 Start server:
 ```
@@ -34,4 +38,4 @@ npm install -g gulp
 ```
 
 
-
+Suggestions welcome for enhancing this boilerplate stack

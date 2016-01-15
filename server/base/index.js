@@ -1,4 +1,10 @@
-// Base routes for default index/root path, about page, 404 error pages, and others..
+// Routes Basic
+
+
+var Joi = require('joi');
+var Contacts = require('../models/contacts').Contacts;
+
+
 exports.register = function(server, options, next){
 
     server.route([
@@ -48,7 +54,33 @@ exports.register = function(server, options, next){
                 },
                 id: 'api'
             }
-        }
+        },
+        {
+            method: 'POST',
+            path: '/form',
+            config: {
+                validate: {
+                    payload: {
+                        name: Joi.string(),
+                        email: Joi.string().email().required(),
+                        content: Joi.string().required()
+                    }
+                },
+                handler: function (request, reply) {
+                    var newContact = new Contacts({
+                        name: request.payload.name,
+                        email: request.payload.email,
+                        content: request.payload.content
+                    });
+                    newContact.save(function(err) {
+                        if (err) console.log(err);
+                        console.log('User Content Taken!');
+                        reply.redirect('/');
+                    });
+                },
+                id: 'form'
+            }
+        },
     ]);
 
     next();
