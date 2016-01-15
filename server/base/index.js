@@ -8,7 +8,7 @@ exports.register = function(server, options, next){
             config: {
                 handler: function(request, reply){
                     reply.view('about', {
-                        title: 'Super Informative About Page'
+                        title: 'About'
                     });
                 },
                 id: 'about'
@@ -21,7 +21,7 @@ exports.register = function(server, options, next){
                 handler: function(request, reply){
                   // Render the view with the custom greeting
                     reply.view('index', {
-                        title: 'Awesome Boilerplate Homepage'
+                        title: 'Home'
                     });
                 },
                 id: 'index'
@@ -33,10 +33,20 @@ exports.register = function(server, options, next){
             config: {
                 handler: function(request, reply){
                     reply.view('404', {
-                        title: 'Total Bummer 404 Page'
+                        title: '404 - Page Not Found'
                     }).code(404);
                 },
                 id: '404'
+            }
+        },
+        {
+            method: 'GET',
+            path: '/api',
+            config: {
+                handler: function(request, reply){
+                    reply('Your Api Response').code(200);
+                },
+                id: 'api'
             }
         }
     ]);
