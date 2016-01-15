@@ -3,7 +3,7 @@ Node Hapi Swig Mongo
 
 Stuffs Used :
 
-#### [Node](https://nodejs.org/ target="_blank")
+#### [Node][nodeUrl]{:target="_blank"}
 
 #### [Hapi](http://hapijs.com/ :target="_blank")
 
@@ -39,3 +39,6 @@ npm install -g gulp
 
 
 Suggestions welcome for enhancing this boilerplate stack
+
+
+[nodeUrl]: https://nodejs.org
