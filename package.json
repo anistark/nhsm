@@ -1,7 +1,7 @@
 {
   "name": "nhsm",
   "description": "Boilerplate Node.js, Hapi, Swig and MongoDb.",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "author": "Kumar Anirudha",
   "private": false,
   "repository": {
